@@ -1,5 +1,6 @@
 /*****************************
 * Variables and data types
+
 5 primitive javascript data types:
 number: floating point numbers, for decimals and integers
 string
