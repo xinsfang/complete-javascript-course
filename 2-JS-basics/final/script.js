@@ -1,5 +1,11 @@
 /*****************************
 * Variables and data types
+5 primitive javascript data types:
+number: floating point numbers, for decimals and integers
+string
+boolean
+undefined: data type of a variable that does not have a value yet
+null: Means ‘non-exists’
 */
 /*
 var firstName = 'John';
