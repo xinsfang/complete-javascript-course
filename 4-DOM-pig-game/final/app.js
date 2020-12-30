@@ -86,10 +86,10 @@ function init() {
     roundScore = 0;
     gamePlaying = true;
     
-    document.querySelector('.dice').style.display = 'none';
+    document.querySelector('.dice').style.display = 'none'; //select dom by class
 
-    document.getElementById('score-0').textContent = '0';
-    document.getElementById('score-1').textContent = '0';
+    document.querySelector('#score-0').textContent = '0'; //select dom by id
+    document.getElementById('score-1').textContent = '0'; //select dom by id
     document.getElementById('current-0').textContent = '0';
     document.getElementById('current-1').textContent = '0';
     document.getElementById('name-0').textContent = 'Player 1';

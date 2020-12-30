@@ -1,7 +1,7 @@
 /////////////////////////////////////
 // Lecture: Hoisting
 
-/*
+
 // functions
 calculateAge(1965);
 
@@ -9,10 +9,11 @@ function calculateAge(year) {
     console.log(2016 - year);
 }
 
-// retirement(1956);
+//retirement(1956); // we can use a variable (undefined) before it is defined, but cann't call a function in such a way
 var retirement = function(year) {
-    console.log(65 - (2016 - year));
+    console.log(retirement, 65 - (2016 - year));
 }
+retirement(1956);
 
 
 // variables
@@ -21,13 +22,13 @@ console.log(age);
 var age = 23;
 
 function foo() {
-    console.log(age);
+    console.log(age);  // undefined
     var age = 65;
     console.log(age);
 }
 foo();
-console.log(age);
-*/
+console.log(age); // 23
+
 
 
 
@@ -48,7 +49,7 @@ function first() {
         console.log(a + b + c);
     }
 }
-
+*/
 
 // Example to show the differece between execution stack and scope chain
 var a = 'Hello!';
@@ -66,17 +67,17 @@ function first() {
 
 function third() {
     var d = 'John';
-    //console.log(c);
+    // console.log(b, c); // b and c are not defined
     console.log(a+d);
 }
-*/
+
 
 
 
 /////////////////////////////////////
 // Lecture: The this keyword
 
-/*
+
 //console.log(this);
 
 calculateAge(1985);
@@ -110,4 +111,4 @@ var mike = {
 
 mike.calculateAge = john.calculateAge;
 mike.calculateAge();
-*/
+

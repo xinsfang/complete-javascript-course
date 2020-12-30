@@ -1,12 +1,12 @@
 /*****************************
-* Variables and data types
+ Variables and data types
 
-5 primitive javascript data types:
-number: floating point numbers, for decimals and integers
-string
-boolean
-undefined: data type of a variable that does not have a value yet
-null: Means ‘non-exists’
+ 5 primitive javascript data types:
+ number: floating point numbers, for decimals and integers
+ string
+ boolean
+ undefined: data type of a variable that does not have a value yet
+ null: Means ‘non-exists’
 */
 
 var firstName = 'John';
@@ -29,19 +29,19 @@ var _3years = 3;
 var $3years = 3;
 var johnMark = 'John and MArk';
 //var if = 23;
-
+console.log(_3years, $3years, johnMark)
 
 
 
 /*****************************
 * Variable mutation and type coercion
 */
-/*
+
 var firstName = 'John';
 var age = 28;
 
 // Type coercion
-console.log(firstName + ' ' + age);
+console.log(firstName + ' ' + age); //type coercion: convert one type to another: 28 -> '28'
 
 var job, isMarried;
 job = 'teacher';
@@ -52,7 +52,7 @@ console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? 
 // Variable mutation
 age = 'twenty eight';
 job = 'driver';
-
+/*
 alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
 
 var lastName = prompt('What is his last Name?');
@@ -64,7 +64,7 @@ console.log(firstName + ' ' + lastName);
 /*****************************
 * Basic operators
 */
-/*
+
 var year, yearJohn, yearMark;
 now = 2018;
 ageJohn = 28;
@@ -83,23 +83,25 @@ console.log(now / 10);
 
 // Logical operators
 var johnOlder = ageJohn < ageMark;
-console.log(johnOlder);
+console.log('ageJohn < ageMark ? ', johnOlder);
 
 
 // typeof operator
 console.log(typeof johnOlder);
 console.log(typeof ageJohn);
 console.log(typeof 'Mark is older tha John');
+console.log(typeof typeof 1) //string
 var x;
-console.log(typeof x);
-*/
+console.log(typeof x); //udefined
+
 
 
 
 /*****************************
 * Operator precedence
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 */
-/*
+
 var now = 2018;
 var yearJohn = 1989;
 var fullAge = 18;
@@ -127,7 +129,7 @@ x += 10;
 console.log(x);
 x--;
 console.log(x);
-*/
+
 
 
 
@@ -165,7 +167,7 @@ console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
 /*****************************
 * If / else statements
 */
-/*
+
 var firstName = 'John';
 var civilStatus = 'single';
 
@@ -177,10 +179,12 @@ if (civilStatus === 'married') {
 
 
 var isMarried = true;
-if (isMarried) {
-    console.log(firstName + ' is married!');
+//if (isMarried) {
+//if (123 == '123') {  //The == operator does type coercion
+if (isMarried == 'true') {  //not equal. Funny.
+    console.log(firstName + ' is married! 222');
 } else {
-    console.log(firstName + ' will hopefully marry soon :)');
+    console.log(firstName + ' will hopefully marry soon :) 222');
 }
 
 var massMark = 78; // kg
@@ -197,7 +201,7 @@ if (BMIMark > BMIJohn) {
 } else {
     console.log('John\'s BMI is higher than Marks\'s.');
 }
-*/
+
 
 
 
